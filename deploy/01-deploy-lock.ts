@@ -19,6 +19,8 @@ const deployLockContract: DeployFunction = async function (
     const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
 
     console.log(`Deployed lock to ${lock.address}`);
+    console.log(`Owner address ${owner.address}`);
+    console.log(`otherAccount address ${otherAccount.address}`);
 };
 
 export default deployLockContract;
