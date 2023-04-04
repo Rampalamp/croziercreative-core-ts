@@ -2,7 +2,7 @@ import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/dist/types";
 import { ethers } from "hardhat";
 
-const deployLockContract: DeployFunction = async function (
+const deployXENContract: DeployFunction = async function (
     hre: HardhatRuntimeEnvironment
 ) {
     // Contracts are deployed using the first signer/account by default
@@ -28,6 +28,6 @@ const deployLockContract: DeployFunction = async function (
     console.log(`otherAccount address ${otherAccount.address}`);
 };
 
-export default deployLockContract;
+export default deployXENContract;
 
-deployLockContract.tags = ["all", "xen"];
+deployXENContract.tags = ["all", "xen"];
