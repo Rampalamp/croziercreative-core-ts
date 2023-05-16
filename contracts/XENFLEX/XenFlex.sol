@@ -54,12 +54,20 @@ interface IXENCrypto {
 contract XenFlex is ERC721, ERC721Enumerable, Ownable {
     constructor() ERC721("XENFLEX", "XFLEX") {}
 
-    //Xen Contract Address
+    //Xen Contract Address - Commented out and swapped to HH Local node for testing.
+    // address public constant XenContractAddress =
+    //     0x06450dEe7FD2Fb8E39061434BAbCFC05599a6Fb8;
+
+    //HH LOCAL TEST XEN CONTRACT ADDRESS
     address public constant XenContractAddress =
-        0x06450dEe7FD2Fb8E39061434BAbCFC05599a6Fb8;
-    // Base URI
-    string private _baseURL =
-        "https://xenflex.blob.core.windows.net/nft-metadata/";
+        0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0;
+
+    // Base URI **Main URL replaced for testing purposes.
+    // string private _baseURL =
+    //     "https://xenflex.blob.core.windows.net/nft-metadata/";
+
+    //TEST _baseURL
+    string private _baseURL = "Fart69";
 
     /**
      * @dev This is the Minting NFT Functions_setBaseURI}.
