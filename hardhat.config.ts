@@ -10,11 +10,19 @@ const config: HardhatUserConfig = {
         hardhat: {
             chainId: 31337,
             allowUnlimitedContractSize: true,
+            // mining: {
+            //     auto: false,
+            //     interval: 20000,
+            // },
         },
         localhost: {
             chainId: 31337,
             url: LOCALHOST_RPC_URL,
             allowUnlimitedContractSize: true,
+            // mining: {
+            //     auto: false,
+            //     interval: 20000,
+            // },
         },
     },
     solidity: "0.8.17",
